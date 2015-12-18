@@ -3,6 +3,6 @@
 
 int main(int argc, char **argv)
 {
-	printf("Hello, the Embeded World!\n");
+	printf("Hello, the Embeded World! From start up!\n");
 	return 0;
 }

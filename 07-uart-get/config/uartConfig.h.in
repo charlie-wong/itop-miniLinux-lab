@@ -1,0 +1,4 @@
+// the configured options and settings for UART
+#define UART_VERSION_MAJOR @UART_VERSION_MAJOR@
+#define UART_VERSION_MINOR @UART_VERSION_MINOR@
+

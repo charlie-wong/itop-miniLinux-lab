@@ -1,0 +1,4 @@
+// the configured options and settings for BUZZER
+#define BUZZER_VERSION_MAJOR @BUZZER_VERSION_MAJOR@
+#define BUZZER_VERSION_MINOR @BUZZER_VERSION_MINOR@
+

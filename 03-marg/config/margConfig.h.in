@@ -1,0 +1,4 @@
+// the configured options and settings for Tutorial
+#define MARG_VERSION_MAJOR @MARG_VERSION_MAJOR@
+#define MARG_VERSION_MINOR @MARG_VERSION_MINOR@
+

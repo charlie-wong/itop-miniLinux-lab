@@ -1,0 +1,4 @@
+// the configured options and settings for Leds
+#define LEDS_VERSION_MAJOR @LEDS_VERSION_MAJOR@
+#define LEDS_VERSION_MINOR @LEDS_VERSION_MINOR@
+
