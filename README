@@ -1,0 +1,21 @@
+重启 TFTP 服务进程
+$ sudo service tftpd-hpa restart
+#####################################################################
+启动NFS服务器
+$ sudo service portmap start
+$ sudo service rpcbind restart
+$ sudo service nfs-kernel-server start
+$ sudo apt-get install nfs-kernel-server 安装 nfs 服务器
+$ sudo apt-get install nfs-common        安装 nfs 客户端
+#####################################################################
+本地挂在测试
+$ sudo mount -t nfs 127.0.0.1:服务器目录共享的目录 挂在点
+$ sudo mount -t nfs localhost:/home/charlie/.wlc/nfs /media/wlc
+$ umount /media/wlc
+板子挂在后出现 No such device，客户机的 kernel 缺乏对 nfs 文件系统的支持
+$ modprobe nfs	尝试向内核添加 nfs 模块
+#####################################################################
+$ service --status-all
+#####################################################################
+$ showmount -e 查看本地共享文件夹
+$ showmount -e IP 查看指定IP的主机上的共享的文件夹/文件
